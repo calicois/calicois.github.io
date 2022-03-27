@@ -1,0 +1,225 @@
+body {
+    background: url('../img/bg.gif') no-repeat;
+    background-size: cover;
+    height: calc(100vh - 16px);
+}
+
+:root {
+    --black: rgb(17, 17, 17);
+    --grey: #212121;
+    --white: #fff;
+    --light-grey: rgb(191, 191, 213);
+}
+
+@keyframes reveal {
+    to {
+        left: 100%;
+    }
+}
+
+
+.profile {
+    font-family:'Quicksand', sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.profile .container .top img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 9999px;
+}
+
+h2 {
+    padding: 8px 0px;
+  }
+  h2 {
+    margin:0px;
+    background: #f5f5f500;
+    white-space:nowrap;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    overflow:hidden;
+    animation: typing 1.5s steps(1000,end) forwards,
+              blink 1.7s ease;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:100%; }
+  }
+  @keyframes blink {
+    100% {
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+    }
+    0%,50% {
+      border-bottom: 2px solid rgb(255, 255, 255);
+    }
+  }
+
+.profile .container .bottom {
+    display: flex;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.profile .container .bottom img {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-left: 5px;
+    transition: 0.4s
+}
+
+.profile .container .bottom img:hover {
+    animation: 0.4s rotate ease;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+.profile .container .other {
+    background: rgba(0, 0, 0, 0.100);
+}
+
+.profile .container .skills {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile .container .skills img {
+    width: 35px;
+    height: 35px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.profile .container .skills p {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.profile .container .location {
+    display: flex;
+    color: var(--white);
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.profile .container .location:hover {
+    opacity: 1;
+}
+
+.profile .container .location a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.profile .container .location img {
+    margin-right: 2px;
+}
+
+.profile .container .links .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.profile .container .links .socials img {
+    height: 64px;
+    width: 64px;
+    transition: 0.5s;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+
+.profile .container .links .socials img:hover {
+    transform: scale(1.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+}
+
+.btns {
+    background: rgba(0, 0, 0, 0.219);
+    backdrop-filter: blur(5px);
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.etc button {
+    position:relative; display:-webkit-box; display:-ms-flexbox; display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.116) inset;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+    width: 350px;
+    margin: 10px;
+    transition: 0.4s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.etc h3 {
+    font-family:'Quicksand', sans-serif;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.etc img {
+    border-radius: 999px;
+}
+
+.etc .open {
+    opacity: 0.5;
+}
+
+.etc button:hover {
+    transform: scale(1.05);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.etc a {
+    text-decoration: none;
+}
