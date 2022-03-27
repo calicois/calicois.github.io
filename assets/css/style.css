@@ -49,7 +49,7 @@ h2 {
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     overflow:hidden;
     animation: typing 1.5s steps(1000,end) forwards,
-              blink 1.7s ease;
+              blink 2.0s ease;
   }
   @keyframes typing {
     0% { width:0% }
